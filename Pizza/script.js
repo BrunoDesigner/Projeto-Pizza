@@ -17,7 +17,7 @@ pizzaJson.map((item, index)=>{
         c('.pizzaBig img').src = pizzaJson[key].img
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name
         c('.pizzaInfo--desc').innerHTML = pizzaJson[key].description
-        
+        c('.pizza-item-price').innerHTML = (`R$ ${item.price.toFixed(2)}`)
 
         c('.pizzaWindowArea').style.opacity = '0'
         c('.pizzaWindowArea').style.display='flex'
